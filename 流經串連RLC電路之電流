@@ -1,0 +1,11 @@
+f=1e5:5e4:1e7;
+vs=120;c=0.25e-9;i=0.1e-3;r=100;
+w=2*pi*f;
+io=vs./(r+j*2*pi*f*i-j./(2*pi*f*c));
+phase=angle(io)*180/pi;
+subplot(2,1,1);
+semilogx(f,abs(io),'LineWidth',2);
+grid on;
+subplot(2,1,2);
+semilogx(f,phase,'LineWidth',2);
+grid on;
