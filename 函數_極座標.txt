@@ -1,4 +1,4 @@
-µ²ªG
+çµæœ
 [r,theta]=rec_to_polar(3,4)
 r =  5
 theta =  0.92730
@@ -6,7 +6,7 @@ theta =  0.92730
 r =  2.2361
 theta =  1.1071
 
-µ²ªG(*180/PI)
+çµæœ(*180/PI)
 [r,theta]=rec_to_polar(1,2)
 r =  2.2361
 theta =  63.435
@@ -14,7 +14,7 @@ theta =  63.435
 r =  5
 theta =  53.130
 
-µ{¦¡½X
+ç¨‹å¼ç¢¼
 function [r,theta]=rec_to_polar(x,y)
   msg=nargchk(1,2,nargin);
   error(msg);
