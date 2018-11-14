@@ -1,0 +1,26 @@
+結果
+[r,theta]=rec_to_polar(3,4)
+r =  5
+theta =  0.92730
+>> [r,theta]=rec_to_polar(1,2)
+r =  2.2361
+theta =  1.1071
+
+結果(*180/PI)
+[r,theta]=rec_to_polar(1,2)
+r =  2.2361
+theta =  63.435
+>> [r,theta]=rec_to_polar(3,4)
+r =  5
+theta =  53.130
+
+程式碼
+function [r,theta]=rec_to_polar(x,y)
+  msg=nargchk(1,2,nargin);
+  error(msg);
+  if nargin==1
+    y=0;
+  endif;
+  r=sqrt(x^2+y^2);
+  theta=atan2(y,x)*180/pi;
+endfunction
