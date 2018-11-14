@@ -1,4 +1,4 @@
-µ²ªG
+çµæœ
  result=area_or_volume(2)
 result =  12.566
 >> result=area_or_volume(2,3)
@@ -8,7 +8,7 @@ error: too many input arguments
 error: called from
     area_or_volume at line 3 column 1
 
-µ{¦¡½X
+ç¨‹å¼ç¢¼
 function result=area_or_volume(radius,height)
 msg=nargchk(1,2,nargin);
 error(msg);
