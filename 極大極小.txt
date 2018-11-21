@@ -1,0 +1,16 @@
+function[xmin,ymin,xmax,ymax]=extreme(first,last,num_steps,func)
+msg=nargchk(4,4,nargin);
+error(msg);
+dx=(last-first)/(num_steps-1);
+x=first:dx:last;
+y=feval(func,x);
+[ymax,maxy]=max(y);
+[ymin,miny]=min(y);
+xmax=x(maxy);
+xmin=x(miny);
+
+[xmin,ymin,xmax,ymax]=extreme(0,2*pi,100,'sin')
+xmin =  4.6965
+ymin = -0.99987
+xmax =  1.5867
+ymax =  0.99987
