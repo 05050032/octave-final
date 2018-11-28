@@ -1,0 +1,6 @@
+x=0:0.1:2;
+y=exp(-x).*sin(x);
+stem(x,y);
+figure, stairs(x,y);
+figure, bar(x,y);
+figure, compass(x,y);
