@@ -1,10 +1,10 @@
-function out=caps(str)
+function [out]=caps(str)
   str=lower(str);
   sstr(1)=upper(srt(1));
   n=length(str);
-  for i=2:n
-    if isspace(str(i-1))&isletter(str(i))
-      str(i)=upper(str(i));
+  for ii=2:n
+    if isspace(str(ii-1))&isletter(str(ii))
+      str(ii)=upper(str(ii));
     endif
   endfor
   out=str;
