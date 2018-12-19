@@ -5,7 +5,7 @@ ii=1:10;
 square_root=sqrt(ii);
 square=ii.^2;
 cube=ii.^3;;
-out=[ii 'square_root' square 'cube'];
+out=[ii' square_root' square' cube'];
 for ii=1:10
   fprintf('%2d  %11.4f  %6d   %8d\n',out(ii,:))
 endfor
