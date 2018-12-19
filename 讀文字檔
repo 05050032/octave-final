@@ -1,0 +1,1 @@
+>>[first,last,blood,gpa,aye,answer]=textread('test.txt','%s%s%s%f%d%s')
