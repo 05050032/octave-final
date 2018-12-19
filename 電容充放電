@@ -1,0 +1,30 @@
+function yprime=fun2(t,y)
+  r=1e6;
+  c=1e-6;
+  lumda=1/(r*c);
+  yprime=lumda*vin(t)-lumda*y;
+endfunction
+
+
+
+function v=vin(t)
+  if t>=0 & t<=6
+    if mod(floor(t),2)==0
+      v=1;
+    else
+      v=-1;
+    endif
+  else
+    v=0;
+  endif
+endfunction
+
+
+
+	clear all;close all;
+hndl=@fun2;
+tspau=[0 10];
+yo=0;
+[t,y]=ode45(hndl,tspau,yo);
+plot(t,y);
+grid on;
