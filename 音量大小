@@ -1,0 +1,4 @@
+[y, fs]=wavread('welcome.wav');
+sound(1*y, fs);
+sound(3*y, fs);
+sound(5*y, fs);
